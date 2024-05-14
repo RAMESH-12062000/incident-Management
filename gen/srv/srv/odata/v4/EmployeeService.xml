@@ -109,6 +109,44 @@
         <Property Name="description" Type="Edm.String"/>
         <Property Name="level" Type="Edm.String"/>
       </EntityType>
+      <Annotations Target="EmployeeService.Employee">
+        <Annotation Term="UI.SelectionFields">
+          <Collection>
+            <PropertyPath>fName</PropertyPath>
+            <PropertyPath>lName</PropertyPath>
+            <PropertyPath>email</PropertyPath>
+            <PropertyPath>phone</PropertyPath>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.LineItem">
+          <Collection>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="fName"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="lName"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="email"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="phone"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="gender"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="DOB"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="age"/>
+            </Record>
+            <Record Type="UI.DataField">
+              <PropertyValue Property="Value" Path="contractStarted"/>
+            </Record>
+          </Collection>
+        </Annotation>
+      </Annotations>
       <Annotations Target="EmployeeService.Employee/ID">
         <Annotation Term="Core.ComputedDefaultValue" Bool="true"/>
       </Annotations>

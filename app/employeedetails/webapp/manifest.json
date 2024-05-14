@@ -4,7 +4,7 @@
     "id": "com.app.employeedetails",
     "type": "application",
     "i18n": "i18n/i18n.properties",
-    "applicationVersion": {   
+    "applicationVersion": {
       "version": "0.0.1"
     },
     "title": "{{appTitle}}",
@@ -169,6 +169,6 @@
   },
   "sap.cloud": {
     "public": true,
-    "service": "EMP-SAPUI5-CAP-MANAGE"
+    "service": "EMPLOYEE-CAP-MANAGED"
   }
 }

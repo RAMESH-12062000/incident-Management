@@ -169,6 +169,6 @@
     },
     "sap.cloud": {
         "public": true,
-        "service": "EMP-SAPUI5-CAP-MANAGE"
+        "service": "EMPLOYEE-CAP-MANAGED"
     }
 }
