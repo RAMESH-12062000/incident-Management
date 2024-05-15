@@ -10,6 +10,31 @@ annotate EmployeeService.Employee with {
     phone  @title: '{i18n>phone}';
 };
 
+annotate EmployeeService.Salary with {
+    costToCompany @title : 'Cost To Company';
+    employeePf @title : 'Employee PF';
+    employerPf @title : 'Employer PF';
+    nps @title : 'NPS';
+    vpf @title : 'VPF';
+
+};
+
+annotate EmployeeService.Department with {
+    name @title : 'Name';
+    description @title : 'Description';
+    headCount @title : 'HeadCount';
+
+};
+
+annotate EmployeeService.Designation with {
+    name @title : 'Name';
+    description @title : 'Description';
+    level @title : 'Level';
+
+};
+
+
+
 
 // annotate EmployeeService.Employee with @restrict: [{
 //         grant: '*',

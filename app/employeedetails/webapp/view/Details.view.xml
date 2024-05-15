@@ -6,7 +6,8 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
     displayBlock="true"
-    xmlns="sap.m"  
+    xmlns="sap.m"
+    xmlns:m="sap.m"
 >
     <uxap:ObjectPageLayout
         id="idEmployeeDetailsObjectPage"
@@ -21,6 +22,25 @@
                     />
                 </uxap:expandedHeading>
                 <uxap:actions>
+
+                <!-- Single image added for a record into ObjectPageLayout -->
+                    <HBox
+                        id="IdGenHBox"
+                        fitContainer="true"
+                        alignItems="Center"
+                    >
+                        <Avatar
+                            id="IdGenAvatar"
+                            src="./Images/img(1).jpg"
+                            class="sapUiTinyMarginEnd"
+                        />
+                        <Title
+                            id="IdTitle1"
+                            text="{fName} {lName}"
+                            wrapping="true"
+                        />
+                    </HBox>
+
                     <Button
                         id="idBtnDelete"
                         icon="sap-icon://delete"
