@@ -2,8 +2,7 @@ namespace employee.details;
 
 using {reusable.types as types} from './ReusableTypes';
 using {
-  cuid,
-  managed
+  cuid
 } from '@sap/cds/common';
 
 
@@ -12,7 +11,7 @@ using {
   phone: [phone]
 }
 
-entity Employee : cuid, managed {
+entity Employee : cuid {
 
   fName           : String;
   lName           : String;
@@ -27,6 +26,7 @@ entity Employee : cuid, managed {
   salary          : Composition of Salary;
   department      : Association to Department;
   designation     : Association to Designation;
+  image           : LargeString;
 }
 
 entity Address : cuid {

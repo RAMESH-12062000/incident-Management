@@ -22,9 +22,8 @@
                     />
                 </uxap:expandedHeading>
                 <uxap:actions>
-
-                <!-- Single image added for a record into ObjectPageLayout -->
-                    <HBox
+                    <!-- Single image added for all record into ObjectPageLayout -->
+                    <!-- <HBox
                         id="IdGenHBox"
                         fitContainer="true"
                         alignItems="Center"
@@ -39,7 +38,41 @@
                             text="{fName} {lName}"
                             wrapping="true"
                         />
+                    </HBox> -->
+
+                    <!-- which is added a image in the corner of ObjectPageLayout... -->
+                    <HBox
+                        id="IdGenHBox"
+                        fitContainer="true"
+                        alignItems="Center"
+                    >
+                        <Avatar
+                            id="IdGenAvatar"
+                            src="{image}"
+                            class="sapUiTinyMarginEnd"
+                        />
+                        <Title
+                            id="IdTitle1"
+                            text="{fName} {lName}"
+                            wrapping="true"
+                        />
                     </HBox>
+                  
+                  <!-- this is one type way for adding image... -->
+                    <!-- <VBox
+                        id="IdGenVBox1"
+                        alignItems="Center"
+                    >
+                        <Image
+                            id="IdGenImage1"
+                            src="./Images/img(1).jpg"
+                            mode="{/imageMode}"
+                            height="3em"
+                            backgroundSize="1em 1em"
+                            backgroundPosition="start"
+                            width="5em"
+                        />
+                    </VBox> -->
 
                     <Button
                         id="idBtnDelete"
